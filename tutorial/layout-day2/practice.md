@@ -326,7 +326,7 @@ function on_click_chat() {
 
 </details>
 
-* **object cell **_****_&#x20;
+* **object cell**&#x20;
 
 <details>
 

@@ -10,7 +10,7 @@ catalog\_main의 경우, 자동으로 jamkit 엔진에 view를 만들어 sbml, s
 
 sbml에서 ’$’를 이용해 아래의 그림과 같이 (특정 or 전체) 데이터를 요청할 경우, 해당 sbml에서 요청하는 데이터를 찾은 후, sbml 내 요청 부문과 일치하는 데이터로 replace하여 sbml을 만든 후, 화면이 올라갑니다.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### showcase object
 
@@ -18,7 +18,7 @@ container object는 특정한 sbml, sbss를 영역 내 형태에 맞는 것을 �
 
 showcase의 경우 data가 없으면 사용할 수가 없습니다. 즉, data가 있어야 사용할 수 있는 object입니다.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 #### cell의 갯수
 
@@ -38,7 +38,7 @@ showcase에서 가장 중요한 것은 column-count, row-count입니다. 한 화
   예시4) row-count=1: 아래 그림의 <4>번\
   column-count는 지정하지 않아야 데이터의 수만큼 뿌려집니다
 
-<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 #### cell의 크기
 
@@ -85,7 +85,7 @@ object cell에서와 마찬가지로 파일 이름 규칙을 기반으로 sbml,s
 * data 찾기\
   sqlite의 showcases 테이블에서 showcase가 balance인 데이터를 찾습니다.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 *   파일 찾기
 

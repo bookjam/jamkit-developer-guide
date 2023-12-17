@@ -8,7 +8,7 @@ _2. catalog\_home.sbml에서 object cell을 bottom에 fixed는 방법_
 
 권장되는 방법으로는 오른쪽, 왼쪽 정렬에 따른 하위 섹션(=begin left .. =end left / =begin right … end right)을 만든 후, 하위 섹션에 사용되는 오브젝트를 넣는 것입니다.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ```javascript
 // S_BOTTOM_cell.sbml : 적용된 스타일을 바로 알기 위해 sbml에 스타일 적용
@@ -48,7 +48,7 @@ margin-collapse는 margin이 겹치는 부분 중 더 큰 값을 가진 것이 �
 * jamkit에서는 margin-collapse가 일어나 horizontal의 total margin은 20입니다.
 * margin-left가 margin-right보다 절대값이 더 큰 것을 확인할 수 있습니다.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 ### Object cell을 bottom에 Fixed 처리
 
@@ -65,7 +65,7 @@ margin-collapse는 margin이 겹치는 부분 중 더 큰 값을 가진 것이 �
 
 따라서 object section과 object cell을 이용해 두 개의 영역으로 분리하여야 합니다.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 object cell을 제외한 구현 view의 경우 '=begin catalog … =end catalog' 내에 구현되었기 때문에 catalog 섹션에 id를 부여해 이를 obejct section의 section과 연결하는 것입니다.
 

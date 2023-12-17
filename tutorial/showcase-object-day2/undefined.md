@@ -2,7 +2,7 @@
 
 ### 아래의 화면을 구현해보세요
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 ### 실습 가이드
 

@@ -8,12 +8,12 @@
 
 {% hint style="info" %}
 * **id - 특정 id를 지정하는 경우(has-own-sbml=yes로 설정되어야 함)**\
-  __id : S\_MY\_PRACTICE3\_000001\
+  id : S\_MY\_PRACTICE3\_000001\
   <mark style="color:red;">S\_MY\_PRACTICE3\_000001</mark>\_cell.sbml/sbss를 찾는다
 * **template - 템플릿을 지정하는 경우**\
   name: practice3\
   template: installed\
-  __showcase\_<mark style="color:red;">practice3</mark>\_<mark style="color:red;">installed</mark>\_cell.sbml/sbss를 찾는다
+  showcase\_<mark style="color:red;">practice3</mark>\_<mark style="color:red;">installed</mark>\_cell.sbml/sbss를 찾는다
 * **name - 쇼케이스 이름을 지정하는 경우**\
   name: practice3\
   showcase\_<mark style="color:red;">practice3</mark>\_cell.sbml/sbss를 찾는다
@@ -36,7 +36,7 @@ showcase object 첫 번째 강의에서 showcase object의 경우 data가 없으
 =object showcase: data-sctipt="feed_apps"
 ```
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 showcase name을 이용해 데이터를 받았던 것을 data-script를 통해서 데이터를 넣었으므로, 화면(sbml, sbss) 연결 설정이 필요합니다.
 
@@ -49,13 +49,13 @@ showcase name을 이용해 데이터를 받았던 것을 data-script를 통해�
                   style="showcase_list"       //스타일 연결
 ```
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ### sqlite와 data-script 비교
 
 showcase에서 구현되는 cell의 layout을 구성하는 showcase\_apps\_cell에 대하여 설명합니다. 간단하게 title만 나타낼 것이기 때문에 복잡한 구성은 하지 않았습니다.
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 간단하게 구현되는 코드지만 이 챕터를 넣은 이유는 catalog\_home에서 data-script로 js 내에서 api로 받은 데이터를 연결하였을 때와 파일 이름 규칙(sqlite)으로 데이터 연결하는 name을 비교하기 위해서입니다.
 
@@ -69,9 +69,9 @@ data 중 title의 value로 비교를 진행하기에, 각 value를 다르게 하
 =object showcase: data-script="feed_apps", alternate-name="apps"
 ```
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 #### sqlite
 
@@ -79,9 +79,9 @@ data 중 title의 value로 비교를 진행하기에, 각 value를 다르게 하
 =object showcase: name="balance2", alternate-name="apps"
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 sqlite로 data를 연결한 예시를 살펴보면, showcase object 강의 내용 1과 같이 name을 사용한 것을 볼 수 있습니다.
 
@@ -93,13 +93,13 @@ data는 name을 통해 가져왔지만, alternate-name을 사용해 특정 연�
 
 위의 showcase\_apps\_cell까지 진행하다 보면 아래의 에러가 계속 발생합니다.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 showcase object는 data가 있어야 사용할 수 있음을 지난 강의에서 설명했습니다.
 
 data를 불러오는 동안 sbml 파일의 화면 렌더링 또한 늦습니다. 이렇게 시간이 1초 이상 소요되어 화면에 렌더링되기 전에 사용하는 화면이 transient\_cell입니다.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 가장 처음 설명한던 파일 이름 우선 적용 규칙을 떠올려 보시면, showcase\_default\_transient\_cell은 우선 순위의 설정 파일들이 모두 없는 경우, 가장 마지막에 탐색되는 파일입니다.
 
@@ -123,25 +123,17 @@ data를 불러오는 동안 sbml 파일의 화면 렌더링 또한 늦습니다.
 * transient sbml 완성\
   showcase\_{name}\_cell의 레이아웃에 맞게 showcase\_{name}\_trasient\_cell을 완성합니다.
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 위의 작업을 완료한 후, 결과 화면은 아래 이미지와 같습니다. 스크롤로 다음 데이터 연결 화면을 렌더링하기 전, 적용되는 transient 화면입니다.
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ### object showcase의 다양한 property
 
 앞서 설명한 transient cell은는 스크롤로 데이터를 새로 불러서 화면에 렌더링할 때 적용됩니다. object showcase에 설정되는 필수 설정 외에 추가적인 설정을 설명합니다. 이러한 설정이 없어도 transient cell이 적용되지만 트래픽 및 메모리를 고려해야 할 때 아래의 설정을 적절하게 이용할 수 있기 때문입니다.
 
-| Property              | value | Description                                                                       |
-| --------------------- | ----- | --------------------------------------------------------------------------------- |
-| preload-count         | 숫자    | object showcase의 배치될 cell의 수보다 크게 하여, 미리 일부 데이터를 화면에서 받아놓는 설정입니다.                 |
-| keep-count            | 숫자    | 새로운 데이터를 받을 때, 이전의 데이터는 메모리 최적화를 위해서 사라집니다. 가장 최근의 데이터를 기점으로 n개의 데이터를 유지하는 설정입니다. |
-| keeps-offscreen-cells | yes   | 스크롤하며 새로운 데이터를 받더라도 이전의 모든 데이터가 유지되도록 하는 설정입니다.                                   |
-| reloads-when-pull     | yes   | 화면을 아래로 끌어 '새로고침'하는 설정입니다.                                                        |
-| eager-loading         | yes   | 첫 로딩 시, 모든 데이터를 받아 놓는 설정입니다.                                                      |
-| max-cell-count        | 숫자    | 스크롤이 적용되지 않도록 일부 데이터만 보여지는 설정입니다.                                                 |
-| first-cell            | 숫자    | cell마다 고유의 index가 있는데 해당 index가 가장 상단으로 위치하도록 지정하는 설정입니다.                         |
+<table><thead><tr><th width="225">Property</th><th width="80">value</th><th>Description</th></tr></thead><tbody><tr><td>preload-count</td><td>숫자</td><td>object showcase의 배치될 cell의 수보다 크게 하여, 미리 일부 데이터를 화면에서 받아놓는 설정입니다.</td></tr><tr><td>keep-count</td><td>숫자</td><td>새로운 데이터를 받을 때, 이전의 데이터는 메모리 최적화를 위해서 사라집니다. 가장 최근의 데이터를 기점으로 n개의 데이터를 유지하는 설정입니다.</td></tr><tr><td>keeps-offscreen-cells</td><td>yes</td><td>스크롤하며 새로운 데이터를 받더라도 이전의 모든 데이터가 유지되도록 하는 설정입니다.</td></tr><tr><td>reloads-when-pull</td><td>yes</td><td>화면을 아래로 끌어 '새로고침'하는 설정입니다.</td></tr><tr><td>eager-loading</td><td>yes</td><td>첫 로딩 시, 모든 데이터를 받아 놓는 설정입니다.</td></tr><tr><td>max-cell-count</td><td>숫자</td><td>스크롤이 적용되지 않도록 일부 데이터만 보여지는 설정입니다.</td></tr><tr><td>first-cell</td><td>숫자</td><td>cell마다 고유의 index가 있는데 해당 index가 가장 상단으로 위치하도록 지정하는 설정입니다.</td></tr></tbody></table>
 
 #### 예시 코드 내, object showcase에 적용된 설정
 
@@ -204,7 +196,7 @@ data를 불러오는 동안 sbml 파일의 화면 렌더링 또한 늦습니다.
 =object showcase: max-cell-count=3
 ```
 
-<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 * first-cell\
   first-cell을 사용해서 특정 cell의 index를 지정할 경우 해당 인덱스가 가장 상단에 배치됩니다.
@@ -213,7 +205,7 @@ data를 불러오는 동안 sbml 파일의 화면 렌더링 또한 늦습니다.
 =object showcase: firtst-cell=3
 ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 ### empty cell: 검색 결과에 데이터가 없을 때 화면
 
@@ -228,10 +220,10 @@ data를 불러오는 동안 sbml 파일의 화면 렌더링 또한 늦습니다.
 * data-script, API 끊기\
   catalog\_home.js에서 data-script에 연결된 function 내 API 연결 주소에 '!'를 추가하여, 불러오는 데이터가 없도록 합니다.
 
-<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 위의 작업을 완료한 후, 결과 화면은 아래의 이미지와 같습니다. catalog\_home에서 object showcase에 설정한 width와 height는 유지되지만 showcase\_apps\_empty의 object label이 화면의 결과로 나오는 것을 확인할 수 있습니다.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

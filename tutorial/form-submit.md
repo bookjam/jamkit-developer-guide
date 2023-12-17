@@ -39,18 +39,9 @@ form validation의 기본 속성은 meesage-when-<mark style="color:red;">invali
 
 * textfield
 
-| 속성                 | 값                             | 설명                                                                          |
-| ------------------ | ----------------------------- | --------------------------------------------------------------------------- |
-| invalid-when-empty | yes                           | 비어 있으면 invalid 처리                                                           |
-| message-when-empty |                               | invalid 상태일 때, 얼럿으로 띄울 메시지                                                  |
-| action-when-empty  | none / toast / alert / script | invalid 상태일 때, 메시지를 toast나 alert으로 띄우거나 script를 실행함                         |
-| script-when-empty  | {script name}                 | <p>invalid 상태일 때, script를 실행함<br>💡 action-when-empty=none or script 필요</p> |
+<table><thead><tr><th width="226">속성</th><th width="136">값</th><th>설명</th></tr></thead><tbody><tr><td>invalid-when-empty</td><td>yes</td><td>비어 있으면 invalid 처리</td></tr><tr><td>message-when-empty</td><td></td><td>invalid 상태일 때, 얼럿으로 띄울 메시지</td></tr><tr><td>action-when-empty</td><td>none / toast / alert / script</td><td>invalid 상태일 때, 메시지를 toast나 alert으로 띄우거나 script를 실행함</td></tr><tr><td>script-when-empty</td><td>{script name}</td><td>invalid 상태일 때, script를 실행함<br>💡 action-when-empty=none or script 필요</td></tr></tbody></table>
 
-| 속성                    | 값     | 설명                                                                 |
-| --------------------- | ----- | ------------------------------------------------------------------ |
-| valid-format          | email | 입력값이 email 형태가 아니면 invalid 처리                                      |
-| valid-format          | 정규표현식 | 전화번호나 비밀번호 등 다양한 조건을 구현할 수 있음                                      |
-| prevents-invalid-text | yes   | <p>valid한 텍스트만 입력받을 수 있음<br>💡 중간 단계의 valid-format을 모두 허용해줘야 함</p> |
+<table><thead><tr><th width="211.33333333333331">속성</th><th width="108">값</th><th>설명</th></tr></thead><tbody><tr><td>valid-format</td><td>email</td><td>입력값이 email 형태가 아니면 invalid 처리</td></tr><tr><td>valid-format</td><td>정규표현식</td><td>전화번호나 비밀번호 등 다양한 조건을 구현할 수 있음</td></tr><tr><td>prevents-invalid-text</td><td>yes</td><td>valid한 텍스트만 입력받을 수 있음<br>💡 중간 단계의 valid-format을 모두 허용해줘야 함</td></tr></tbody></table>
 
 ```javascript
 // 기본
@@ -76,14 +67,7 @@ form validation의 기본 속성은 meesage-when-<mark style="color:red;">invali
 
 * checkbox
 
-| 속성                   | 값      | 설명                                                             |
-| -------------------- | ------ | -------------------------------------------------------------- |
-| group                |        | 함께 동작해야 하는 checkbox를 동일한 group으로 묶음                            |
-| value                |        | 각 checkbox마다 별개의 value를 지정함                                    |
-| select-mode          | single | group 내에 check가 하나만 유지됨                                        |
-| valid-when-selected  | yes    | <p>check하지 않았을 때 invalid 처리<br>💡 필수로 체크해야 하는 checkbox에 설정</p> |
-| message-when-invalid |        | invalid 상태일 때, alert으로 띄울 메시지                                  |
-| action-when-invalid  | toast  | invalid 상태일 때, 메시지를 toast로 띄움                                  |
+<table><thead><tr><th width="222">속성</th><th width="98">값</th><th>설명</th></tr></thead><tbody><tr><td>group</td><td></td><td>함께 동작해야 하는 checkbox를 동일한 group으로 묶음</td></tr><tr><td>value</td><td></td><td>각 checkbox마다 별개의 value를 지정함</td></tr><tr><td>select-mode</td><td>single</td><td>group 내에 check가 하나만 유지됨</td></tr><tr><td>valid-when-selected</td><td>yes</td><td>check하지 않았을 때 invalid 처리<br>💡 필수로 체크해야 하는 checkbox에 설정</td></tr><tr><td>message-when-invalid</td><td></td><td>invalid 상태일 때, alert으로 띄울 메시지</td></tr><tr><td>action-when-invalid</td><td>toast</td><td>invalid 상태일 때, 메시지를 toast로 띄움</td></tr></tbody></table>
 
 {% code overflow="wrap" %}
 ```javascript
@@ -110,10 +94,7 @@ submit은 로컬 sqlite에 데이터를 저장하는 액션입니다.&#x20;
   data라는 showcase에 있는 S\_123이라는 id로 데이터를 만들거나, id가 이미 있으면 데이터를 추가한다.\
   동일한 key가 있으면 해당 key의 value를 덮어쓴다.
 
-| 속성               | 값                  | 설명                     |
-| ---------------- | ------------------ | ---------------------- |
-| action-when-done | bottom-sheet-close | submit이 완료되면 액션을 실행함   |
-| script-when-done |                    | submit이 완료되면 스크립트를 실행함 |
+<table><thead><tr><th width="193.33333333333331">속성</th><th width="192">값</th><th>설명</th></tr></thead><tbody><tr><td>action-when-done</td><td>bottom-sheet-close</td><td>submit이 완료되면 액션을 실행함</td></tr><tr><td>script-when-done</td><td></td><td>submit이 완료되면 스크립트를 실행함</td></tr></tbody></table>
 
 {% code overflow="wrap" %}
 ```javascript
