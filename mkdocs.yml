@@ -1,0 +1,54 @@
+site_name: "Jamkit 개발자 가이드"
+theme:
+  name: material
+  language: ko
+  logo: assets/logo.png
+  favicon: assets/favicon-32x32.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - search.suggest
+plugins:
+  - search
+extra:
+  disqus: wsl-firststep
+markdown_extensions:
+  - meta
+  - footnotes
+nav:
+  - 홈:
+    - index.md
+  - 개요:
+    - overview/introduction.md
+    - overview/architecture.md
+    - overview/jamkit.md
+  - 시작하기:
+    - start/development-tools.md
+    - start/development-environment.md
+    - start/jamkit-ide.md
+    - start/jamkit-run.md
+  - 기본:
+    - jamkit/jamkit-command-tools.md
+    - jamkit/catalog-configuration.md
+    - jamkit/sbml-sbss.md
+    - jamkit/smart-book-style-sheet.md
+    - jamkit/javascript.md
+  - 튜토리얼:
+    - tutorial/layout-day1/README.md
+    - tutorial/layout-day2/README.md
+    - tutorial/showcase-object-day1.md
+    - tutorial/showcase-object-day2/README.md
+    - tutorial/day-3.md
+    - tutorial/panes.md
+    - tutorial/action.md
+    - tutorial/form-submit.md
+    - tutorial/navigation-script.md
+    - tutorial/js.md
+    - tutorial/10.md
+  - FAQ:
+    - faq-troubleshoot/page-1.md
+  - 참조 문서:
+    - reference/basic-style.md
+    - reference/basic-object.md
+    - reference/container-object.md
+  - GitHub: https://github.com/bookjam/jamkit
