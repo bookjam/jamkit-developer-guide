@@ -1,2 +1,9 @@
-# jamkit-developer-guide
-Developer's Guide for Jamkit
+# 잼킷이란?
+
+### 잼킷은 크로스 플랫폼 프레임워크입니다
+
+![](.gitbook/assets/cover.png)
+
+* 잼킷은 네이티브 기반 프레임워크이며, 웹뷰를 사용하지 않은 순수한 네이티브 앱을 개발할 수 있습니다.
+* JIT 컴파일 방식으로 동작하여 개발과 배포가 편리합니다.
+* Android, iOS를 동시 지원합니다.
