@@ -13,4 +13,4 @@ description: SBML (Smart Book Markup Language)가 무엇이고 어떻게 사용�
 
 ![SBML (Smart Book Markup Language) 예제](images/sbml.png)
 
-\<To Do: SBML의 기본적인 사항을 설명>
+&lt;To Do: SBML의 기본적인 사항을 설명&gt;

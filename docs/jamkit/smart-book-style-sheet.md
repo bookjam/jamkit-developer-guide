@@ -13,4 +13,4 @@ SBML로 정의한 레이아웃의 상세한 스타일을 정의하기 위해 SBS
 
 ![SBSS (Smart Book Style Sheet) 예제](images/sbss.png)
 
-\<To Do: SBSS의 기본적인 사항을 설명>
+&lt;To Do: SBSS의 기본적인 사항을 설명&gt;
