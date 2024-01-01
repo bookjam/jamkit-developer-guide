@@ -24,7 +24,9 @@ nav:
     - overview/jamkit.md
   - 시작하기:
     - start/development-tools.md
-    - start/development-environment.md
+    - start/development-environment/android-studio.md
+    - start/development-environment/node.js.md
+    - start/development-environment/jamkit.md
     - start/jamkit-ide.md
     - start/jamkit-run.md
   - 기본:
@@ -34,6 +36,7 @@ nav:
     - jamkit/smart-book-style-sheet.md
     - jamkit/javascript.md
   - 튜토리얼:
+    - tutorial/index.md
     - tutorial/layout-day1/README.md
     - tutorial/layout-day2/README.md
     - tutorial/showcase-object-day1.md
