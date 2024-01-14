@@ -1,20 +1,21 @@
 ---
+title: IDE 환경 설정하기
 description: Jamkit 개발 환경을 설정하기 위한 자세한 방법을 안내합니다.
 ---
 
 # Jamkit IDE 환경 설정
 
-### Android Studio
+## Android Studio
 
-#### Android Studio 설치하기
+### Android Studio 설치하기
 
-#### 아래의 다운로드 페이지에서 OS에 맞는 Android Studio 최신 버전을 설치합니다.
+아래의 다운로드 페이지에서 OS에 맞는 Android Studio 최신 버전을 설치합니다.
 
 {% embed url="https://developer.android.com/studio?hl=ko" %}
 
 ![](images/android-studio-download-windows.png)
 
-#### Android SDK 설치하기
+### Android SDK 설치하기
 
 Android SDK Platform-Tools를 설치합니다.
 
@@ -22,7 +23,7 @@ Android SDK Platform-Tools를 설치합니다.
 
 ![](images/android-studio-sdk-platform-tools.png)
 
-#### 환경변수 설정하기
+### 환경변수 설정하기
 
 Windows
 
@@ -45,17 +46,17 @@ macOS
 * 터미널을 종료 후 재실행하거나 아래 명령어로 환경변수를 적용합니다.
   * source \~/.zshrc
 
-### Visual Studio Code
+## Visual Studio Code
 
-#### Visual Studio Code 설치
+### Visual Studio Code 설치
 
-#### 아래의 다운로드 페이지에서 OS에 맞는 Visual Studio Code 최신 버전을 설치합니다.
+아래의 다운로드 페이지에서 OS에 맞는 Visual Studio Code 최신 버전을 설치합니다.
 
 {% embed url="https://code.visualstudio.com/download" %}
 
 ![](images/vs-code-download.png)
 
-#### Visual Studio Code 전용 플러그인 설치
+### Visual Studio Code 전용 플러그인 설치
 
 Syntax Highlight를 위한 확장파일을 설치합니다.
 

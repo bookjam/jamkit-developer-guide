@@ -6,14 +6,15 @@ create는 프로젝트를 생성하는 명령어입니다.
 
 #### 기본 명령어
 
+아래 명령어를 실행하면 HelloWorld 템플릿이 생성됩니다.
+
 ```
 jamkit create {프로젝트명}
-// HelloWorld 템플릿이 생성
 ```
 
 #### 옵션
 
-\--template: 다른 템플릿으로 앱을 생성하려는 경우
+`--template`: 다른 템플릿으로 앱을 생성하려는 경우
 
 ```
 jamkit create --template=XXX

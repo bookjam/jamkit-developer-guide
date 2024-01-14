@@ -15,22 +15,23 @@ extra:
 markdown_extensions:
   - meta
   - footnotes
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 nav:
-  - 홈:
-    - index.md
   - 개요:
-    - overview/introduction.md
+    - index.md
+    - overview/about.md
     - overview/architecture.md
-    - overview/jamkit.md
   - 시작하기:
-    - start/development-tools.md
-    - start/development-environment/android-studio.md
-    - start/development-environment/node.js.md
-    - start/development-environment/jamkit.md
-    - start/jamkit-ide.md
-    - start/jamkit-run.md
+    - getting-started/requirements.md
+    - getting-started/install-windows.md
+    - getting-started/install-macos.md
+    - getting-started/configure-ide.md
+    - getting-started/first-run.md
   - 기본:
-    - jamkit/jamkit-command-tools.md
     - jamkit/catalog-configuration.md
     - jamkit/sbml-sbss.md
     - jamkit/smart-book-style-sheet.md
@@ -48,9 +49,11 @@ nav:
     - tutorial/navigation-script.md
     - tutorial/js.md
     - tutorial/10.md
-  - FAQ:
-    - faq-troubleshoot/page-1.md
+  - 질문과 답변:
+    - support/troubleshoot.md
   - 참조 문서:
+    - reference/jamkit-cli.md
+    - reference/install-android-oem.md
     - reference/basic-style.md
     - reference/basic-object.md
     - reference/container-object.md
