@@ -69,7 +69,7 @@ jamkit run --platform=android
 2. 툴바의 "메뉴 > 터미널 > 새 터미널" 또는 "Ctrl + \`"로 터미널 창을 엽니다.
 3. 아래 명령어를 입력합니다.
 
-```
+```bash
 jamkit create HelloWorld // 샘플 프로젝트 생성
 cd HelloWorld // 프로젝트 폴더로 이동
 jamkit run // jamkit 최초 실행 시, jamkit 슈퍼 앱 설치
