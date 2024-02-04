@@ -32,7 +32,6 @@ nav:
     - getting-started/requirements.md
     - getting-started/install-windows.md
     - getting-started/install-macos.md
-    - getting-started/configure-ide.md
     - getting-started/first-run.md
   - 기본:
     - jamkit/catalog-configuration.md
