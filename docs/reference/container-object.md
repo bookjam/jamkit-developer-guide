@@ -64,7 +64,6 @@
 
 내비게이션 바에서 현재 선택된 셀을 위한 sbml을 로딩할 때 선택된 상태를 나타내는 환경변수를 sbss에서 사용할 수 있다. 환경변수 이름은 $STATE이고 선택된 셀에는 $STATE의 값으로 "selected"가 지정된다. 따라서 아래와 같은 방법으로 sbss를 작성하면 선택된 셀에 특정 색상 값이나 이미지 등을 지정할 수 있다.
 
-{% code overflow="wrap" %}
 ```javascript
 if $STATE == "selected"
     /cell: text-color=#f00
@@ -72,7 +71,6 @@ else
     /cell: text-color=#000
 end
 ```
-{% endcode %}
 
 #### 디바이스별 고려사항 <a href="#_6" id="_6"></a>
 
@@ -129,12 +127,10 @@ N/A
 
 배너 오브젝트는 외부 데이터를 사용하여 셀의 내용을 채워넣는 기능을 지원한다. 외부 데이터는 웹(HTTP/S)을 통해 액세스 가능해야 하며, 요청에 대한 응답으로 json으로 표현된 데이터를 전송해야 한다. 웹 요청은 GET 메소드를 사용하며, 해당 배너의 모든 데이터를 한번에 포함하여 응답해야 한다. 배너 오브젝트에서 외부 데이터를 사용하려면 data-downloadable을 yes로 지정하고, data-url 속성에 외부 데이터의 URL을 지정하면 된다.
 
-{% code overflow="wrap" %}
 ```javascript
 =object banner: name="ads", data-downloadable=yes, \
                 data-url="http://www.munhak.com/ads"
 ```
-{% endcode %}
 
 ### 쇼케이스(Showcase) 오브젝트 <a href="#showcase" id="showcase"></a>
 
@@ -261,12 +257,10 @@ N/A
 
 쇼케이스 오브젝트는 외부 데이터를 사용하여 셀의 내용을 채워넣는 기능을 지원한다. 외부 데이터는 웹(HTTP/S)을 통해 액세스 가능해야 하며, 요청에 대한 응답으로 json으로 표현된 데이터를 전송해야 한다. 웹 요청은 POST 방식을 사용하며, 요청하는 데이터의 범위(시작위치, 갯수)를 파라미터로 전달할 수 있다. 요청받은 범위가 실제 데이터의 범위를 벗어나면, 빈 json 데이터와 함께 성공 응답(200)을 해야 한다. 데이터 범위를 파라미터로 전달하지 않으면, 모든 데이터를 한번에 포함하여 응답한다. 쇼케이스 오브젝트에서 외부 데이터를 사용하려면 data-downloadable을 yes로 지정하고, data-url 속성에 외부 데이터의 URL을 지정하면 된다. 쇼케이스 오브젝트에 Load more 기능이 활성화되어 있다면(loads-more=yes), 데이터의 범위를 지정하여 외부 데이터를 순차적으로 한 묶음씩 불러올 수 있다.
 
-{% code overflow="wrap" %}
 ```javascript
 =object showcase: name="magazine", data-downloadable=yes, \
                 data-url="http://www.munhak.com/magazine", loads-more=yes
 ```
-{% endcode %}
 
 ### 카드(Card) 오브젝트 <a href="#card" id="card"></a>
 

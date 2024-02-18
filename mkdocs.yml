@@ -40,17 +40,17 @@ nav:
     - jamkit/javascript.md
   - 튜토리얼:
     - tutorial/index.md
-    - tutorial/layout-day1/README.md
-    - tutorial/layout-day2/README.md
-    - tutorial/showcase-object-day1.md
-    - tutorial/showcase-object-day2/README.md
-    - tutorial/day-3.md
+    - tutorial/layout-day-1.md
+    - tutorial/layout-day-2.md
+    - tutorial/showcase-object-day-1.md
+    - tutorial/showcase-object-day-2.md
+    - tutorial/showcase-object-day-3.md
     - tutorial/panes.md
     - tutorial/action.md
     - tutorial/form-submit.md
     - tutorial/navigation-script.md
-    - tutorial/js.md
-    - tutorial/10.md
+    - tutorial/context.md
+    - tutorial/localization.md
   - 질문과 답변:
     - support/troubleshoot.md
   - 참조 문서:

@@ -4,9 +4,8 @@
 
 사용자가 입력하는 내용을 한꺼번에 가져오는 방식입니다. 보통 sbml 내에 form section을 만들고, 내부에 사용자가 입력할 수 있는 object를 나열합니다.
 
-object에 입력된 데이터는 key\&value 쌍으로 이루어진 딕셔너리가 되어 저장, 전송, 스크립트 처리할 수 있습니다.
+object에 입력된 데이터는 key와 value 쌍으로 이루어진 딕셔너리가 되어 저장, 전송, 스크립트 처리할 수 있습니다.
 
-{% code overflow="wrap" %}
 ```javascript
 // sbml
 =begin XXX: form={id}
@@ -15,13 +14,11 @@ object에 입력된 데이터는 key\&value 쌍으로 이루어진 딕셔너리�
 ...
 =end XXX
 ```
-{% endcode %}
 
 section의 form id와 object의 form id를 통일하고, script={scirpt name}으로 설정하면, 해당 object에 입력된 데이터가 해당 script로 넘어갑니다.
 
 사용자가 입력하지 않은, 개발자가 원하는 데이터를 parameter로 전달하고 싶을 때는 input object를 쓰면 됩니다.
 
-{% code overflow="wrap" %}
 ```javascript
 // sbml
 =begin XXX: form=abc
@@ -29,13 +26,12 @@ section의 form id와 object의 form id를 통일하고, script={scirpt name}으
 =object input: id=acd, value=kyc
 =end XXX
 ```
-{% endcode %}
 
 #### validation
 
 사용자가 입력한 데이터가 적합한지 validation할 수 있습니다. jamkit 자체에서 처리하거나, 스크립트에서 처리할 수 있습니다.
 
-form validation의 기본 속성은 meesage-when-<mark style="color:red;">invalid</mark>, action-when-<mark style="color:red;">invalid</mark>, script-when-<mark style="color:red;">invalid</mark> 형태입니다. textfield는 empty 상태가 특수한 속성이어서 \~\~\~-when-<mark style="color:red;">empty</mark> 형태로 속성이 부여되어 있습니다.
+form validation의 기본 속성은 meesage-when-<mark style="color:red;">invalid</mark>, action-when-<mark style="color:red;">invalid</mark>, script-when-<mark style="color:red;">invalid</mark> 형태입니다. textfield는 empty 상태가 특수한 속성이어서 *-when-<mark style="color:red;">empty</mark> 형태로 속성이 부여되어 있습니다.
 
 * textfield
 
@@ -69,7 +65,6 @@ form validation의 기본 속성은 meesage-when-<mark style="color:red;">invali
 
 <table><thead><tr><th width="222">속성</th><th width="98">값</th><th>설명</th></tr></thead><tbody><tr><td>group</td><td></td><td>함께 동작해야 하는 checkbox를 동일한 group으로 묶음</td></tr><tr><td>value</td><td></td><td>각 checkbox마다 별개의 value를 지정함</td></tr><tr><td>select-mode</td><td>single</td><td>group 내에 check가 하나만 유지됨</td></tr><tr><td>valid-when-selected</td><td>yes</td><td>check하지 않았을 때 invalid 처리<br>💡 필수로 체크해야 하는 checkbox에 설정</td></tr><tr><td>message-when-invalid</td><td></td><td>invalid 상태일 때, alert으로 띄울 메시지</td></tr><tr><td>action-when-invalid</td><td>toast</td><td>invalid 상태일 때, 메시지를 toast로 띄움</td></tr></tbody></table>
 
-{% code overflow="wrap" %}
 ```javascript
 // sbml
 =(object checkbox: group=check, value=checked1, style=btn_check)= \
@@ -83,20 +78,18 @@ form validation의 기본 속성은 meesage-when-<mark style="color:red;">invali
             valid-when-selected=yes, message-when-invalid="check!", \
             action-when-invalid="toast"
 ```
-{% endcode %}
 
 ### submit
 
 submit은 로컬 sqlite에 데이터를 저장하는 액션입니다.&#x20;
 
 * action-when-xxx=submit
-* params-when-xxx="form={id}, showcase=data, display-unit=S\_123"\
-  data라는 showcase에 있는 S\_123이라는 id로 데이터를 만들거나, id가 이미 있으면 데이터를 추가한다.\
+* params-when-xxx="form={id}, showcase=data, display-unit=S_123"
+  data라는 showcase에 있는 S_123이라는 id로 데이터를 만들거나, id가 이미 있으면 데이터를 추가한다.
   동일한 key가 있으면 해당 key의 value를 덮어쓴다.
 
 <table><thead><tr><th width="193.33333333333331">속성</th><th width="192">값</th><th>설명</th></tr></thead><tbody><tr><td>action-when-done</td><td>bottom-sheet-close</td><td>submit이 완료되면 액션을 실행함</td></tr><tr><td>script-when-done</td><td></td><td>submit이 완료되면 스크립트를 실행함</td></tr></tbody></table>
 
-{% code overflow="wrap" %}
 ```javascript
 // sbml
 =begin title: form=message
@@ -113,7 +106,6 @@ submit은 로컬 sqlite에 데이터를 저장하는 액션입니다.&#x20;
                 action-when-done="bottom-sheet-close", \
                 script-when-done=on_done
 ```
-{% endcode %}
 
 submit으로 데이터를 url로 보낼 수도 있습니다.
 

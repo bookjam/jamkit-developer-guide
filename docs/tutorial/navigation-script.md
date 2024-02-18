@@ -24,9 +24,9 @@ jamkit은 기본적으로 catalog로 화면이 구성되는데, 앱의 메뉴나
 
 `action=subcatalog, subcatalog={name}, target=self/popup`
 
-위 명령어를 쓰면 catalog\_{name}이 현재 화면 내에서 바뀌거나 팝업으로 뿌려집니다. 다만, 위 명령어는 거의 쓰지 않고 subview를 불러서 subcatalog를 띄우는 방식으로 씁니다.
+위 명령어를 쓰면 catalog_{name}이 현재 화면 내에서 바뀌거나 팝업으로 뿌려집니다. 다만, 위 명령어는 거의 쓰지 않고 subview를 불러서 subcatalog를 띄우는 방식으로 씁니다.
 
-정리하면, 앱은 catalog라는 기본 화면 내에 subcatalog가 있고, 내비게이션으로 보면 subcatalog 위에서 page, popup, bottom-sheet 등이 뜨는 것입니다.
+정리하면, 앱은 catalog라는 기본 화면 내에 subcatalog가 있고, 내비게이션으로 보면 subcatalog 위에서 page, popup, bottom-sheet 등이 뜨는 것입니다.
 
 #### controller, module 속성
 
@@ -38,13 +38,13 @@ module은 sbml/sbss 파일이 많아질 경우, 폴더로 묶을 수 있는 속�
 
 위에서도 얘기했듯이 jamkit에서는 subcatalog를 직접 다루는 일은 거의 없고 subview라는 논리적인 개념으로 연결하여 이용합니다. subview는 subcatalog만 앱에 올릴 수 있습니다. 하나의 subcatalog는 여러 subview와 연결될 수 있으나, 대부분 1 대 1로 연결됩니다.
 
-카탈로그 엑셀 문서에 subview라는 시트가 있고, 각 subview는 "V\_"로 시작하는 대문자로 된 id가 부여되어 있습니다. subview는 앱에서 동적으로 추가할 수 없습니다.
+카탈로그 엑셀 문서에 subview라는 시트가 있고, 각 subview는 "V_"로 시작하는 대문자로 된 id가 부여되어 있습니다. subview는 앱에서 동적으로 추가할 수 없습니다.
 
 <figure><img src="images/subview sample.png" alt=""><figcaption></figcaption></figure>
 
-앱이 처음 실행되면 catalog\_main.sbml이 실행됩니다. 내부에는 id가 container인 blank object가 들어 있습니다. 참고로, catalog\_main의 subview 이름은 "\_\_MAIN\_\_"으로 고정입니다.
+앱이 처음 실행되면 catalog_main.sbml이 실행됩니다. 내부에는 id가 container인 blank object가 들어 있습니다. 참고로, catalog_main의 subview 이름은 "__MAIN__"으로 고정입니다.
 
-catalog\_main은 catalog.bon에 있는 default-subview를 찾아서 해당 subview와 연결된 subcatalog를 화면에 띄웁니다.
+catalog_main은 catalog.bon에 있는 default-subview를 찾아서 해당 subview와 연결된 subcatalog를 화면에 띄웁니다.
 
 ```javascript
 // catalog_main.sbml
@@ -67,12 +67,12 @@ catalog\_main은 catalog.bon에 있는 default-subview를 찾아서 해당 subvi
 
 위 명령어를 쓰면 해당 subview에 연결된 subcatalog가 container 내에 뜨거나 전체화면 팝업으로 뜹니다.
 
-* target=embed (default)\
-  catalog\_main에 뜬 container 영역 위에 겹쳐셔 보임(전체화면 아닐 수 있음)
-* target=self\
-  catalog\_main에 뜬 container 영역을 대체하면서 보임(전체화면 아닐 수 있음)
-* target=popup\
-  catalog\_main 위에 전체화면으로 보임
+* target=embed (default)
+  catalog_main에 뜬 container 영역 위에 겹쳐셔 보임(전체화면 아닐 수 있음)
+* target=self
+  catalog_main에 뜬 container 영역을 대체하면서 보임(전체화면 아닐 수 있음)
+* target=popup
+  catalog_main 위에 전체화면으로 보임
 
 ### 스크립트 연결
 
@@ -143,7 +143,7 @@ owner는 container 오브젝트를 포함한 원본 view를 가리킵니다.
 
 예를 들여, showcase 오브젝트에 header가 있다면, showcase 오브젝트를 품은 sbml이 있고, header를 구현하는 sbml이 있을 것입니다.
 
-이때, showcase\_{name}\_header.sbml에는 owner가 생기며, 이 owner는 showcase 오브젝트를 품은 showcase\_{name}\_header.sbml view를 가리킵니다.
+이때, showcase_{name}_header.sbml에는 owner가 생기며, 이 owner는 showcase 오브젝트를 품은 showcase_{name}_header.sbml view를 가리킵니다.
 
 특정 view가 자기 바깥의 view에서 object를 찾으려면 `controller.object(id)`로 찾습니다.
 

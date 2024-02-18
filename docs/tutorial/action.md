@@ -10,7 +10,10 @@ action은 반드시 특정한 event가 발생해야 실행됩니다. 주로 obje
 
 #### button의 action
 
-<table><thead><tr><th width="97">action</th><th>description</th><th>parameter</th></tr></thead><tbody><tr><td>toast</td><td>하단에 검은색 텍스트가 잠깐 떴다 사라짐</td><td>message</td></tr><tr><td>alert</td><td>얼럿창이 떠서 '확인'을 누를 때까지 유지됨</td><td>message</td></tr></tbody></table>
+| action | description              | parameter |
+| ------ | ------------------------ | --------- |
+| toast  | 하단에 검은색 텍스트가 잠깐 떴다 사라짐   | message   |
+| alert  | 얼럿창이 떠서 '확인'을 누를 때까지 유지됨 | message   |
 
 ```javascript
 // sbml
@@ -35,7 +38,6 @@ seletable=yes가 설정된 showcase의 cell을 탭하면 'selected'라는 event�
 
 이때, 해당 cell의 데이터가 자동으로 parameter화하여 전달합니다. prameter로 쓸 데이터를 미리 해당 showcase 데이터에 key와 value로 저장해두어야 합니다.
 
-{% code overflow="wrap" %}
 ```javascript
 // cell을 누를 때, 해당 cell의 title을 toast로 띄움
 #showcase_list: width=1pw, height=0.9ph, \
@@ -45,9 +47,7 @@ seletable=yes가 설정된 showcase의 cell을 탭하면 'selected'라는 event�
                 action-when-selected="toast", \
                 params-when-selected="message=\"hi {title}\""
 ```
-{% endcode %}
 
-{% code overflow="wrap" %}
 ```javascript
 // cell을 누를 때, 해당 cell에 설정된 url을 웹브라우로 띄움
 #showcase_list: width=1pw, height=0.9ph, \
@@ -57,7 +57,6 @@ seletable=yes가 설정된 showcase의 cell을 탭하면 'selected'라는 event�
                 action-when-selected="link", \
                 params-when-selected="url="
 ```
-{% endcode %}
 
 ### 스크립트 실행
 
@@ -65,7 +64,6 @@ action은 스크립트를 모르더라도 필요한 기능을 구현하기 위�
 
 스크립트는 위에서 봤던 코드에서 action이라는 단어 대신 script를 쓰면 됩니다. params는 없으며, 대신 연계된 js 파일에서 해당되는 함수를 불러옵니다.
 
-{% code overflow="wrap" %}
 ```javascript
 button에서 script 실행
 
@@ -78,7 +76,6 @@ funtion alert_message(params) {
     console.log(JSON.stringify(params, null, 2);
 }
 ```
-{% endcode %}
 
 ```javascript
 showcase에서 script 실행
@@ -121,18 +118,18 @@ controller.action("toast", {
 #### 파일 이름 규칙
 
 {% hint style="info" %}
-* **display-unit - 특정 display-unit를 지정하는 경우(has-own-sbml=yes로 설정되어야 함)**\
-  display-unit : S\_MY\_123\
-  <mark style="color:red;">S\_MY\_123</mark>\_bottom\_sheet.sbml/sbss를 찾는다
-* **template - 템플릿을 지정하는 경우**\
-  name: apps\
-  template: installed\
-  showcase\_<mark style="color:red;">apps</mark>\_<mark style="color:red;">installed</mark>\_bottom\_sheet.sbml/sbss를 찾는다
-* **name - 쇼케이스 이름을 지정하는 경우**\
-  name: apps\
-  showcase\_<mark style="color:red;">apps</mark>\_bottom\_sheet.sbml/sbss를 찾는다
-* **defaut - 아무것도 지정하지 않은 경우**\
-  showcase\_<mark style="color:red;">default</mark>\_bottom\_sheet.sbml/sbss를 찾는다
+* **display-unit - 특정 display-unit를 지정하는 경우(has-own-sbml=yes로 설정되어야 함)**
+  display-unit : S_MY_123
+  <mark style="color:red;">S_MY_123</mark>_bottom_sheet.sbml/sbss를 찾는다
+* **template - 템플릿을 지정하는 경우**
+  name: apps
+  template: installed
+  showcase_<mark style="color:red;">apps</mark>_<mark style="color:red;">installed</mark>_bottom_sheet.sbml/sbss를 찾는다
+* **name - 쇼케이스 이름을 지정하는 경우**
+  name: apps
+  showcase_<mark style="color:red;">apps</mark>_bottom_sheet.sbml/sbss를 찾는다
+* **defaut - 아무것도 지정하지 않은 경우**
+  showcase_<mark style="color:red;">default</mark>_bottom_sheet.sbml/sbss를 찾는다
 {% endhint %}
 
 ```
@@ -150,7 +147,7 @@ bottom sheet의 상단 handle의 모양과 크기는 직접 구현해야 합니�
 
 #### Page
 
-page는 화면 상단에 navibar 영역이 자동으로 적용됩니다. 해당하는 파일은 subview\_navibar.sbml/sbss인데요, 요즘은 거의 사용하지 않고, navibar를 직접 구현합니다.
+page는 화면 상단에 navibar 영역이 자동으로 적용됩니다. 해당하는 파일은 subview_navibar.sbml/sbss인데요, 요즘은 거의 사용하지 않고, navibar를 직접 구현합니다.
 
 그래서 page에서는 hides-navibar=yes 속성으로 nivibar를 숨기고, has-own-navibar=yes 속성으로 직접 만든 navibar을 적용합니다. 이 데이터는 엑셀이나 구글 시트의 해당 display-unit에 key, value로 설정합니다.
 

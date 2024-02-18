@@ -8,5 +8,4 @@ MVVM: Model-View-ViewModel
 
 참고 링크
 
-{% embed url="https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EB%B7%B0%EB%AA%A8%EB%8D%B8" %}
-
+* [Wikipedia 한국어 - 모델-뷰-뷰모델](https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EB%B7%B0%EB%AA%A8%EB%8D%B8)

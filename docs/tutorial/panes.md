@@ -37,7 +37,6 @@ showcase를 스크롤할 때, 특정 cell이 따라서 움직이도록 하는 �
 * 대상 오브젝트가 움직이는 속도를 지정할 수 있습니다.
   * velocity-when-follow
 
-{% code overflow="wrap" %}
 ```javascript
 // 원본 오브젝트: 유저가 스크롤하는 오브젝트
 =object showcase: id=showcase1
@@ -47,7 +46,6 @@ showcase를 스크롤할 때, 특정 cell이 따라서 움직이도록 하는 �
                 verlocity-when-follow=0.1, \
                 min-y=0.1ph, max-y=0
 ```
-{% endcode %}
 
 ### panes 오브젝트
 
@@ -55,9 +53,16 @@ panes 오브젝트는 showcase 오브젝트를 가로나 세로로 여러 개 �
 
 #### navibar
 
-상단에 navibar를 배치하여 탭으로 이동할 수도 있습니다. panes\_{name}\_navibar\_cell.sbml/sbss로 구성된 파일이 필요합니다.
+상단에 navibar를 배치하여 탭으로 이동할 수도 있습니다. panes_{name}_navibar_cell.sbml/sbss로 구성된 파일이 필요합니다.
 
-<table><thead><tr><th width="225">속성</th><th>설명</th></tr></thead><tbody><tr><td>has-navibar</td><td><strong>navibar 사용 여부 설정</strong><br>💡 default 값 has-navibar=no</td></tr><tr><td>navibar-cell-size</td><td><strong>navibar cell의 크기 설정</strong><br>"[가로] [세로]"<br>💡 has-navibar=yes 설정 필요</td></tr><tr><td>navibar-cell-spacing</td><td><strong>navibar cell 사이의 간격</strong><br>💡 has-navibar=yes 설정 필요</td></tr><tr><td>navibar-margin</td><td><strong>navibar 전체를 감싼 영역의 margin</strong><br>💡 has-navibar=yes 설정 필요</td></tr><tr><td>navibar-center-align</td><td><strong>navibar 전체를 center로 정렬 여부</strong><br>💡 default 값 navibar-center-align=no<br>💡 has-navibar=yes 설정 필요</td></tr><tr><td>navibar-position</td><td><strong>navibar의 위치 설정 { top, left, bottom, right 등}</strong><br>💡 default 값 navibar-position=bottom<br>💡 has-navibar=yes 설정 필요</td></tr></tbody></table>
+| 속성                   | 설명                                                                                                                                       |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| has-navibar          | <p><strong>navibar 사용 여부 설정</strong><br>💡 default 값 has-navibar=no</p>                                                                  |
+| navibar-cell-size    | <p><strong>navibar cell의 크기 설정</strong><br>"[가로] [세로]"<br>💡 has-navibar=yes 설정 필요</p>                                                   |
+| navibar-cell-spacing | <p><strong>navibar cell 사이의 간격</strong><br>💡 has-navibar=yes 설정 필요</p>                                                                  |
+| navibar-margin       | <p><strong>navibar 전체를 감싼 영역의 margin</strong><br>💡 has-navibar=yes 설정 필요</p>                                                            |
+| navibar-center-align | <p><strong>navibar 전체를 center로 정렬 여부</strong><br>💡 default 값 navibar-center-align=no<br>💡 has-navibar=yes 설정 필요</p>                    |
+| navibar-position     | <p><strong>navibar의 위치 설정 { top, left, bottom, right 등}</strong><br>💡 default 값 navibar-position=bottom<br>💡 has-navibar=yes 설정 필요</p> |
 
 ```javascript
 // SBML

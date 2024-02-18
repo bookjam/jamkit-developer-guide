@@ -26,9 +26,9 @@ js에서 구글 스프레드시트의 데이터를 api처럼 가져올 수 있�
 
 이와 마찬가지로 Google Drive를 해당 프로젝트에서 데이터로 사용하는 api로 가져오기 위해서 특정한 모듈을 이용해야 합니다. 그 과정을 위해서 아래의 url을 이용할 수 있습니다.
 
-{% embed url="https://github.com/jamkit-modules" %}
+[jamkit-modules 리포지터리 살펴보기](https://github.com/jamkit-modules)
 
-다양한 모듈 중 google-sheets 연동을 위한 모듈을 사용해야 하기 때문에, 아래와 같이 google-sheets 레포지터리를 들어간 뒤, 해당 Project를 다운로드 혹은 clone합니다.\
+다양한 모듈 중 google-sheets 연동을 위한 모듈을 사용해야 하기 때문에, 아래와 같이 google-sheets 레포지터리를 들어간 뒤, 해당 Project를 다운로드 혹은 clone합니다.
 
 
 <figure><img src="images/image (29).png" alt=""><figcaption></figcaption></figure>
@@ -41,7 +41,7 @@ MainApp 폴더에 Scripts 폴더를 만든 후, 다운로드한 모듈을 추가
 
 #### 3) JS 연결
 
-catalog\_home.sbml에서 object showcase를 사용하기에, catalog\_home.js 파일을 생성합니다.
+catalog_home.sbml에서 object showcase를 사용하기에, catalog_home.js 파일을 생성합니다.
 
 * 구글 스프레드시트
   * "파일 > 공유 > 다른 사용자와 공유 > 일반 액세스"가 **'링크가 있는 모든 사용자'**로 설정합니다.
@@ -69,15 +69,12 @@ catalog\_home.sbml에서 object showcase를 사용하기에, catalog\_home.js �
 
 터치 슬라이딩을 통해서 페이지가 넘겨지기에 page-enabled=yes 옵션을 줄 시, object showcase의 width와 height와 동일한 값으로 cell-size 값을 설정해야 하나의 페이지에서 하나의 cell을 나타낼 수 있습니다.
 
-{% code overflow="wrap" %}
 ```javascript
 //sbss (object showcase에 연결된 style)
 #showcase_list: width=0.9pw, height=0.8ph, \
-                cell-size="0.9pw 0.8ph", 
-page-enabled=yes, \
+                cell-size="0.9pw 0.8ph", page-enabled=yes, \
                 row-count=1, preload-count=1, keep-count=1
 ```
-{% endcode %}
 
 #### ViewPager + indicator
 
@@ -87,12 +84,11 @@ page-enabled=yes, \
 
 (예제 1) page-control을 cell 외부에 배치
 
-{% code overflow="wrap" %}
 ```javascript
 // SBML
 =begin list
 =
-object showcase: data-script="feed_apps", alternate-name=apps, \
+object showcase: data-script="feed_apps", alternate-name=apps, 
                 
 style=showcase_list
 =end list
@@ -111,7 +107,6 @@ active-page-dot="circle.png", \
 page-dot-size="10dp 10dp", 
 page-dot-spacing=10dp
 ```
-{% endcode %}
 
 ![](<images/image (10).png>)
 
@@ -119,7 +114,6 @@ page-dot-spacing=10dp
 
 (예제 2) page-control을 cell 내부에 배치
 
-{% code overflow="wrap" %}
 ```javascript
 // SBML
 =begin list
@@ -144,7 +138,6 @@ page-dot-size="10dp 10dp", \
                 
 page-dot-spacing=10dp, inner-page-control=yes
 ```
-{% endcode %}
 
 ![](<images/image (15).png>)
 
@@ -163,20 +156,20 @@ has-header=yes일 경우, 파일 이름 규칙에 따라 header sbml 파일을 �
 {% hint style="info" %}
 **파일 이름 규칙**
 
-* display-unit을 지정할 경우 (has-own-sbml=yes)\
-  <mark style="color:red;">{display-unit}</mark>\_header.sbml
-* template을 지정할 경우\
-  showcase\_<mark style="color:red;">{name}</mark>\_<mark style="color:red;">{template}</mark>\_header.sbml
-* showcase name을 지정할 경우\
-  showcase\_<mark style="color:red;">{name}</mark>\_header.sbml
+* display-unit을 지정할 경우 (has-own-sbml=yes)
+  <mark style="color:red;">{display-unit}</mark>_header.sbml
+* template을 지정할 경우
+  showcase_<mark style="color:red;">{name}</mark>_<mark style="color:red;">{template}</mark>_header.sbml
+* showcase name을 지정할 경우
+  showcase_<mark style="color:red;">{name}</mark>_header.sbml
 {% endhint %}
 
 {% hint style="info" %}
 **column과 row 개수에 따른 설정**
 
-* column-count=1로 설정했을 경우, 스크롤이 상하로 생깁니다.\
+* column-count=1로 설정했을 경우, 스크롤이 상하로 생깁니다.
   **header-height 옵션을 사용해야 함.**
-* row-count=1로 설정했을 경우, 스크롤이 좌우로 생깁니다.\
+* row-count=1로 설정했을 경우, 스크롤이 좌우로 생깁니다.
   **header-width 옵션을 사용해야 함.**
 {% endhint %}
 
@@ -193,9 +186,9 @@ has-footer=yes일 경우, 파일 이름 규칙에 따라 footer sbml 파일을 �
 {% hint style="info" %}
 **column과 row 개수에 따른 설정**
 
-* column-count=1로 설정했을 경우, 스크롤이 상하로 생깁니다.\
+* column-count=1로 설정했을 경우, 스크롤이 상하로 생깁니다.
   **footer-height 옵션을 사용해야 함.**
-* row-count=1로 설정했을 경우, 스크롤이 좌우로 생깁니다.\
+* row-count=1로 설정했을 경우, 스크롤이 좌우로 생깁니다.
   **footer-width 옵션을 사용해야 함.**
 {% endhint %}
 
@@ -211,7 +204,6 @@ has-toolbar=yes일 경우, 파일 이름 규칙에 따라 toolbar sbml 파일을
 
 toolbar의 경우 header와 footer에서 row-count, column-count 설정에 따른 페이지 스크롤 방향에 맞게 width, height 값을 설정해야 하는 것과는 다르게 width는 object showcase의 width와 동일하게 설정되고, height 값만 설정 가능합니다. 따라서 toolbar를 사용할 경우, cell-size에서 toolbar의 height를 빼야 합니다.
 
-{% code overflow="wrap" %}
 ```javascript
 // showcase의 sbss
 #showcase_list: width=0.9pw, height=0.8ph, \
@@ -221,7 +213,6 @@ toolbar의 경우 header와 footer에서 row-count, column-count 설정에 따�
                 
 has-toolbar=yes, toolbar-height=20dp
 ```
-{% endcode %}
 
 toolbar-postion 옵션을 이용해서 default bottom인 값을 변경할 수 있습니다.
 
