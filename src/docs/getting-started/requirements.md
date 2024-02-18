@@ -1,8 +1,3 @@
----
-title: 개발 환경 요구 사양
-description: Jamkit 개발 환경에 대해 소개하고 요구 사양을 알아봅니다.
----
-
 # Jamkit 개발 환경 요구 사양
 
 Jamkit은 Node.js를 기반으로 개발 환경을 제공합니다. 따라서 Windows, macOS 등 어디서든 쉽게 모바일 앱을 개발할 수 있습니다.

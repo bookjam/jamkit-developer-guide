@@ -1,5 +1,4 @@
 ---
-title: 시작하기
 description: Jamkit 개발자 가이드의 첫 페이지입니다.
 ---
 

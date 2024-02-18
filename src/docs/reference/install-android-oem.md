@@ -1,7 +1,4 @@
----
-title: Android OEM USB 드라이버 찾기
-description: 잘 알려진 주요 Android OEM USB 드라이버 다운로드 링크를 제공합니다.
----
+# Android OEM USB 드라이버 찾기
 
 Windows PC에서 일부 Android Phone과 개발 기능을 사용할 수 있도록 연결하기 위해서는 별도의 OEM USB 드라이버를 찾아 설치해야 할 수 있습니다. 다음은 잘 알려주신 주요 제조 업체들의 USB 드라이버 다운로드 링크이며, 해당되는 업체의 드라이버를 찾아 설치할 수 있습니다.
 
