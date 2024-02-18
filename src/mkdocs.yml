@@ -24,8 +24,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 nav:
+  - index.md
   - 개요:
-    - index.md
     - overview/about.md
     - overview/architecture.md
   - 시작하기:
@@ -40,17 +40,6 @@ nav:
     - jamkit/javascript.md
   - 튜토리얼:
     - tutorial/index.md
-    - tutorial/layout-day-1.md
-    - tutorial/layout-day-2.md
-    - tutorial/showcase-object-day-1.md
-    - tutorial/showcase-object-day-2.md
-    - tutorial/showcase-object-day-3.md
-    - tutorial/panes.md
-    - tutorial/action.md
-    - tutorial/form-submit.md
-    - tutorial/navigation-script.md
-    - tutorial/context.md
-    - tutorial/localization.md
   - 질문과 답변:
     - support/troubleshoot.md
   - 참조 문서:
