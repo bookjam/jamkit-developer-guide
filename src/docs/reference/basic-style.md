@@ -1,8 +1,8 @@
 # 기본 스타일
 
-{% hint style="info" %}
-&#x20; 전체 스타일 레퍼런스는 [**여기**](https://docs.google.com/spreadsheets/d/1KkeQW1nWJMP4fFwMkawbe474nVoCwrpLp8v4GutTfJg/edit?usp=sharing)에서 확인하세요.
-{% endhint %}
+!!! note
+
+    &#x20; 전체 스타일 레퍼런스는 [**여기**](https://docs.google.com/spreadsheets/d/1KkeQW1nWJMP4fFwMkawbe474nVoCwrpLp8v4GutTfJg/edit?usp=sharing)에서 확인하세요.
 
 ### 텍스트 레이아웃 속성 <a href="#_1" id="_1"></a>
 

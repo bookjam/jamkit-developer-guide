@@ -1,8 +1,8 @@
 # 컨테이너 오브젝트
 
-{% hint style="info" %}
-구글 스프레드시트는 [**여기**](https://docs.google.com/spreadsheets/d/1439AhKBU1wfHTo7vbrq6Q8l87SCih8xpCNptIMtygxs/edit?usp=sharing)에서 확인하세요.
-{% endhint %}
+!!! note
+
+    구글 스프레드시트는 [**여기**](https://docs.google.com/spreadsheets/d/1439AhKBU1wfHTo7vbrq6Q8l87SCih8xpCNptIMtygxs/edit?usp=sharing)에서 확인하세요.
 
 ### 페인(Panes) 오브젝트 <a href="#panes" id="panes"></a>
 

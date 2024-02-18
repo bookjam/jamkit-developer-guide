@@ -18,13 +18,16 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - def_list
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
 nav:
-  - index.md
+  - 홈페이지: index.md
+  - 다운로드: releases/index.md
   - 개요:
     - overview/about.md
     - overview/architecture.md

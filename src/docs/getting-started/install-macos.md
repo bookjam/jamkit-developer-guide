@@ -104,7 +104,7 @@ Android 디바이스용 앱을 만들려면, 이 과정도 같이 진행해주�
 Jamkit은 기본적으로 Visual Studio Code를 이용하여 앱을 개발합니다.
 
 1. [Visual Studio Code 홈페이지](https://code.visualstudio.com/download)에서 OS에 맞는 Visual Studio Code 최신 버전을 설치합니다.
-1. Jamkit Syntax Highlight 플러그인을 다운로드합니다.
-   [VSIX 파일 다운로드하기](/releases/vscode-jamkit-0.2.1.vsix)
+1. Jamkit Syntax Highlight 플러그인을 아래 페이지에서 다운로드합니다.
+   [VSIX 파일 다운로드하기](/releases)
 1. Visual Studio Code 실행 후, **확장** - *...* - **VSIX에서 설치**를 눌러 다운로드한 VSIX 파일을 열어 설치를 진행합니다.
 1. 만약 Visual Studio Code 다시 로드 버튼이 표시되면, 다시 로드 버튼을 눌러 프로그램을 다시 실행합니다.

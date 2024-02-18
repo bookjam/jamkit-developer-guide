@@ -1,7 +1,3 @@
----
-description: Jamkit 개발자 가이드의 첫 페이지입니다.
----
-
 # Jamkit 개발자 가이드
 
 <figure html>

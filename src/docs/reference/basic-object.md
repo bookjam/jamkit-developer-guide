@@ -1,8 +1,8 @@
 # 기본 오브젝트
 
-{% hint style="info" %}
-구글 스프레드시트는 [**여기**](https://docs.google.com/spreadsheets/d/1Wn2GCSGIPeWzNZKlR4Mbcr1NK-GTcJ7f3b5CVup9iLU/edit?usp=sharing)에서 확인하세요.
-{% endhint %}
+!!! note
+
+    구글 스프레드시트는 [**여기**](https://docs.google.com/spreadsheets/d/1Wn2GCSGIPeWzNZKlR4Mbcr1NK-GTcJ7f3b5CVup9iLU/edit?usp=sharing)에서 확인하세요.
 
 ### 오브젝트 공통 <a href="#_1" id="_1"></a>
 
